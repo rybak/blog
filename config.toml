@@ -1,0 +1,18 @@
+baseURL = "https://mostlypointless.dev/"
+languageCode = "en-us"
+title = "a (mostly) pointless blog"
+theme = "mumo"
+
+copyright = """Except where noted otherwise, content on this website is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  
+Built with [Hugo](https://gohugo.io) | Hosted on [Github Pages](https://pages.github.com) | Github's [Privacy Policy](https://github.com/site/privacy)"""
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Github"
+url = "https://github.com/vamc19"
+weight = 2
+
