@@ -55,11 +55,11 @@ copied, correct? Obviously not. Honestly, I never thought about it. I looked up 
 **_changing some metadata_** etc., the file is first copied from the lower filesystem to the upper filesystem (copy_up).
 
 Well, I have been doing it wrong all these years. I've written a lot of Dockerfiles with shell scripts in `COPY` and 
-`chmod` in `RUN`. Maybe I never realized this because these files are usually very small to make a noticable difference 
+`chmod` in `RUN`. Maybe I never realized this because these files are usually very small to make a noticeable difference 
 in the image size. 
 
 So what's the solution? In my case, since I'm using Podman (which uses Buildah), I can use `--chmod` arg with `COPY` to 
-copy a file and set proper permissions in the same layer. If you are using Docker, it is [availabe][gh-comment] in 
+copy a file and set proper permissions in the same layer. If you are using Docker, it is [available][gh-comment] in 
 BuildKit.
 
 Note that any metadata update will lead to the same result - not just `chmod`. Both Docker and Podman already support 
