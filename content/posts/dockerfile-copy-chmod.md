@@ -76,9 +76,13 @@ handcrafted file with appropriate REDIRECT and METACOPY xattrs, and gain access 
 This should not be possible on local system as setting “trusted.” xattrs will require CAP_SYS_ADMIN. But it should be 
 possible for untrusted layers like from a pen drive.
 
+&nbsp;
+
+Update: This post was discussed on [Hacker News][hn-link] and [Lobsters][lobsters-link]
 
 [overlay-doc]: https://www.kernel.org/doc/html/latest/filesystems/overlayfs.html#non-directories
 [metadata-only-copy]: https://www.kernel.org/doc/html/latest/filesystems/overlayfs.html#metadata-only-copy-up
 [gh-comment]: https://github.com/moby/moby/issues/34819#issuecomment-697130379
 [docker-doc]: https://docs.docker.com/develop/develop-images/dockerfile_best-practices
-
+[hn-link]: https://news.ycombinator.com/item?id=30808945
+[lobsters-link]: https://lobste.rs/s/6i3lci/copy_chmod_reduced_size_my_container
